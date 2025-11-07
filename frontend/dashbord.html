@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - MedAnalyzer AI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="dashboard.html" class="logo-text">
+                <div class="logo-icon"></div> MedAnalyzer <span>AI</span>
+            </a>
+        </div>
+        <nav>
+            <a href="#" class="active">Tableau de Bord</a>
+            <a href="diagnostic.html">Nouveau Diagnostic</a>
+            <a href="#">Historique des Cas</a>
+            <a href="#">Base de Connaissances</a>
+            <a href="auth.html" class="btn btn-outline-primary cta-nav">Déconnexion</a>
+        </nav>
+    </header>
+
+    <section class="dashboard-main-section">
+        <div class="dashboard-header">
+            <h1 class="section-title">Bienvenue, Dr. <span style="color:var(--color-accent-turquoise);">Dupont</span> !</h1>
+            <p class="subtitle" style="text-align:center; color: var(--color-text-light);">
+                Votre espace personnalisé pour des diagnostics rapides et précis.
+            </p>
+        </div>
+
+        <div class="dashboard-grid">
+            
+            <div class="card dashboard-card cta-card">
+                <div class="card-icon"><img src="https://via.placeholder.com/50/20C997/FFFFFF?text=➕" alt="Icone Nouveau Diagnostic"></div>
+                <h3>Démarrer un Nouveau Diagnostic</h3>
+                <p>Analysez les symptômes d'un nouveau patient en quelques secondes.</p>
+                <a href="diagnostic.html" class="btn btn-secondary mt-3">Lancer l'Analyse</a>
+            </div>
+
+            <div class="card dashboard-card">
+                <div class="card-icon"><img src="https://via.placeholder.com/50/007BFF/FFFFFF?text=📜" alt="Icone Historique"></div>
+                <h3>Mes Derniers Diagnostics</h3>
+                <ul class="recent-cases-list">
+                    <li><a href="#">COVID-19 (Patient A) - 20/10/2024</a></li>
+                    <li><a href="#">Pneumonie Atypique (Patient B) - 18/10/2024</a></li>
+                    <li><a href="#">Syndrome Grippal (Patient C) - 15/10/2024</a></li>
+                </ul>
+                <a href="#" class="btn btn-outline-primary btn-small mt-3">Voir tout l'Historique</a>
+            </div>
+
+            <div class="card dashboard-card">
+                <div class="card-icon"><img src="https://via.placeholder.com/50/007BFF/FFFFFF?text=📚" alt="Icone Base de Connaissances"></div>
+                <h3>Accéder à la Base de Connaissances</h3>
+                <p>Recherche sémantique dans des milliers d'articles et recommandations médicales.</p>
+                <a href="#" class="btn btn-outline-primary mt-3">Explorer</a>
+            </div>
+
+            <div class="card dashboard-card stats-card">
+                <div class="card-icon"><img src="https://via.placeholder.com/50/20C997/FFFFFF?text=📊" alt="Icone Statistiques"></div>
+                <h3>Mes Statistiques</h3>
+                <div class="stats-data">
+                    <div class="stat-item">
+                        <span>Cas Analysés</span>
+                        <p>128</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>Précision Moyenne</span>
+                        <p>94.8%</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>Gains de Temps</span>
+                        <p>~15h</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MedAnalyzer AI | Assistant de Diagnostic Médical.</p>
+    </footer>
+
+    <style>
+        /* Styles spécifiques au Tableau de Bord */
+        .dashboard-main-section {
+            padding-top: 120px;
+            background-color: var(--color-background-lightgrey);
+            min-height: calc(100vh - 80px); /* Ajuste la hauteur pour le footer */
+        }
+        
+        .dashboard-header {
+            margin-bottom: 60px;
+        }
+
+        .dashboard-header .section-title {
+            color: var(--color-text-dark);
+            margin-bottom: 15px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .dashboard-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start; /* Alignement du contenu à gauche */
+            padding: 30px;
+            text-align: left;
+            min-height: 250px;
+        }
+        
+        .dashboard-card .card-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-primary-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dashboard-card .card-icon img {
+            filter: invert(1);
+            max-width: 50%;
+        }
+
+        .dashboard-card h3 {
+            color: var(--color-primary-blue);
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .dashboard-card p {
+            color: var(--color-text-light);
+            font-size: 0.95em;
+            flex-grow: 1; /* Permet au paragraphe de prendre l'espace restant */
+        }
+        
+        .dashboard-card .btn {
+            margin-top: 20px;
+            align-self: flex-start; /* Aligne le bouton à gauche */
+        }
+        
+        .cta-card .card-icon {
+            background-color: var(--color-accent-turquoise);
+        }
+
+        /* Liste des cas récents */
+        .recent-cases-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .recent-cases-list li {
+            padding: 8px 0;
+            border-bottom: 1px dotted var(--color-border-light);
+            font-size: 0.95em;
+        }
+        
+        .recent-cases-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .recent-cases-list a {
+            color: var(--color-text-dark);
+            font-weight: 500;
+        }
+        
+        .recent-cases-list a:hover {
+            color: var(--color-primary-blue);
+        }
+
+        /* Statistiques */
+        .stats-card {
+            background: linear-gradient(45deg, var(--color-primary-blue), var(--color-accent-turquoise));
+            color: var(--color-background-white);
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+        }
+        
+        .stats-card h3 {
+            color: var(--color-background-white);
+        }
+        .stats-card p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .stats-card .card-icon {
+            background-color: var(--color-background-white);
+        }
+        .stats-card .card-icon img {
+            filter: none; /* Icone originale ou bleu */
+        }
+
+        .stats-data {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Gère le débordement sur petits écrans */
+        }
+        
+        .stat-item {
+            flex-basis: 30%; /* Pour 3 éléments sur une ligne */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .stat-item span {
+            display: block;
+            font-size: 0.85em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .stat-item p {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--color-background-white);
+            margin-top: 5px;
+        }
+
+        .stats-card .btn { /* Pas de bouton dans la carte de stats ici */
+            display: none;
+        }
+    </style>
+</body>
+</html>

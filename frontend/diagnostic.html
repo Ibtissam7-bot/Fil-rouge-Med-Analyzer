@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic - MedAnalyzer AI</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="dashboard.html" class="logo-text">
+                <div class="logo-icon"></div> MedAnalyzer <span>AI</span>
+            </a>
+        </div>
+        <nav>
+            <a href="dashboard.html">Tableau de Bord</a>
+            <a href="#" class="active">Nouveau Diagnostic</a>
+            <a href="#">Base de Connaissances</a>
+            <a href="auth.html" class="btn btn-outline-primary cta-nav">Déconnexion</a>
+        </nav>
+    </header>
+
+    <section class="diagnostic-main-section">
+        <h2 class="section-title">Analyse Clinique <span style="color:var(--color-accent-turquoise);">|</span> Diagnostic Différentiel</h2>
+        
+        <div class="diagnostic-grid">
+            <div class="data-input-panel card">
+                <h3>1. Saisie des Informations Patient</h3>
+                <form id="diagnostic-form">
+                    <div class="form-group">
+                        <label for="symptoms-text">Symptômes Déclarés (Texte Libre)</label>
+                        <textarea id="symptoms-text" rows="6" placeholder="Ex: Fièvre, toux sèche, fatigue intense, perte d'odorat et de goût depuis 3 jours."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="structured-data">Données Cliniques et Antécédents Clés</label>
+                        <textarea id="structured-data" rows="4" placeholder="Ex: Patient 45 ans, non-fumeur, sans antécédents notables. Tension 120/80, Fréquence cardiaque 78."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Genre</label>
+                        <select id="gender">
+                            <option value="">Sélectionner</option>
+                            <option value="male">Homme</option>
+                            <option value="female">Femme</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary full-width analyze-btn mt-4">
+                        Analyser le Cas avec MedAnalyzer AI
+                    </button>
+                </form>
+            </div>
+            
+            <div class="results-panel card">
+                <h3>2. Résultats du Diagnostic IA</h3>
+                
+                <div id="loading-state" style="text-align:center; display:none;">
+                    <p style="color:var(--color-primary-blue); font-weight: 500;">
+                        Analyse intelligente en cours... Votre diagnostic sera prêt en un instant.
+                    </p>
+                    <div class="loader"></div>
+                </div>
+
+                <div id="initial-state">
+                    <img src="assets/img/data_vis_ai.jpg" alt="Visualisation de données IA" class="initial-result-image">
+                    <p style="color:var(--color-text-light); margin-top:30px;">
+                        Les propositions de diagnostics, leur probabilité et les recommandations d'examens
+                        apparaîtront ici. Cliquez sur "Analyser le Cas" pour commencer.
+                    </p>
+                </div>
+
+                <div id="results-display" style="display:none; margin-top: 20px;">
+                    <div class="top-result">
+                        <span class="confidence-badge">Confiance IA: <span id="confidence-score">92.5%</span></span>
+                        <h4 class="text-light">Diagnostic Principal Probable</h4>
+                        <h1 class="main-diagnosis">COVID-19 (Classification ICD-10 U07.1)</h1>
+                    </div>
+
+                    <div class="differential-list mt-4">
+                        <h5 class="text-dark">Autres Diagnostiques Différentiels :</h5>
+                        <ul>
+                            <li>Syndrome Grippal Sévère <span class="prob-tag secondary">68%</span></li>
+                            <li>Rhinite Virale Aiguë <span class="prob-tag low">30%</span></li>
+                            <li>Bronchite Aiguë <span class="prob-tag low">15%</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="action-group mt-5">
+                        <a href="explicabilite.html" class="btn btn-secondary">Comprendre le Diagnostic (Explicabilité)</a>
+                        <button class="btn btn-outline-primary">Recommandations d'Examens Complémentaires</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MedAnalyzer AI | Assistant de Diagnostic Médical.</p>
+    </footer>
+
+    <style>
+        /* Styles spécifiques à la page de diagnostic */
+        .diagnostic-main-section {
+            padding-top: 120px;
+            background-color: var(--color-background-lightgrey);
+        }
+        
+        .diagnostic-main-section .section-title {
+            color: var(--color-text-dark);
+        }
+
+        .diagnostic-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1.8fr; /* Saisie un peu moins large, Résultats plus large */
+            gap: 40px;
+        }
+
+        .data-input-panel h3, .results-panel h3 {
+            color: var(--color-primary-blue);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .data-input-panel {
+            min-height: 650px; /* Pour unifier la hauteur */
+        }
+        
+        .results-panel {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .analyze-btn {
+            margin-top: 25px;
+        }
+
+        .initial-result-image {
+            max-width: 80%;
+            margin-top: 20px;
+            opacity: 0.4;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Résultats affichés */
+        #results-display {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .top-result {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: var(--color-background-white);
+            border: 2px solid var(--color-primary-blue);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+            width: 100%;
+        }
+
+        .confidence-badge {
+            background-color: var(--color-accent-turquoise);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.9em;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .top-result h4 {
+            font-weight: 400;
+            color: var(--color-text-light);
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .main-diagnosis {
+            color: var(--color-primary-blue);
+            font-size: 2.5em;
+            margin-top: 5px;
+            font-weight: 700;
+        }
+
+        .differential-list {
+            text-align: left;
+            width: 100%;
+        }
+
+        .differential-list h5 {
+            color: var(--color-text-dark);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .differential-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .differential-list li {
+            background-color: var(--color-background-white);
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid var(--color-border-light);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            font-weight: 500;
+            color: var(--color-text-dark);
+        }
+
+        .prob-tag {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .prob-tag.low { background-color: #FEEBCF; color: #DC6900; } /* Orange doux */
+        .prob-tag.secondary { background-color: #CCE5FF; color: var(--color-primary-blue); } /* Bleu doux */
+
+        .action-group {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            gap: 20px;
+        }
+        
+        /* Loader */
+        .loader {
+            border: 5px solid var(--color-border-light);
+            border-top: 5px solid var(--color-primary-blue);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <script>
+        document.getElementById('diagnostic-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            document.getElementById('initial-state').style.display = 'none';
+            document.getElementById('results-display').style.display = 'none';
+            document.getElementById('loading-state').style.display = 'block';
+
+            setTimeout(function() {
+                document.getElementById('loading-state').style.display = 'none';
+                document.getElementById('results-display').style.display = 'flex'; // Utiliser flex pour centrer
+            }, 1200); // Temps légèrement augmenté pour l'effet visuel
+        });
+    </script>
+</body>
+</html>

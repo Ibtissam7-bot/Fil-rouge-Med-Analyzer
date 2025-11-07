@@ -1,0 +1,282 @@
+/* =========================================================
+   Variables et Fonts
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Couleurs Thème Lumineux/Médical */
+    --color-primary-blue: #007BFF;   /* Bleu Principal (comme l'exemple) */
+    --color-accent-turquoise: #20C997; /* Turquoise (Innovation/IA) */
+    --color-text-dark: #343A40;      /* Texte sombre */
+    --color-text-light: #6C757D;     /* Texte secondaire/gris */
+    --color-background-white: #FFFFFF; /* Fond blanc */
+    --color-background-lightgrey: #F8F9FA; /* Fond gris clair pour sections */
+    --color-border-light: #DEE2E6;   /* Bordures légères */
+    --color-success: #28A745;        /* Succès */
+    --color-info: #17A2B8;           /* Info */
+
+    /* Typographie */
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background-white);
+    color: var(--color-text-dark);
+    line-height: 1.7;
+    font-family: var(--font-body);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+
+a {
+    text-decoration: none;
+    color: var(--color-primary-blue);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-accent-turquoise);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* =========================================================
+   Boutons et CTAs
+   ========================================================= */
+.btn {
+    padding: 12px 28px;
+    border-radius: 50px; /* Bords arrondis pour un look plus doux */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1em;
+}
+
+.btn-primary {
+    background-color: var(--color-primary-blue);
+    color: var(--color-background-white);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--color-accent-turquoise);
+    color: var(--color-background-white);
+    box-shadow: 0 4px 10px rgba(32, 201, 151, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #1aa27a;
+    box-shadow: 0 6px 15px rgba(32, 201, 151, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--color-primary-blue);
+    color: var(--color-background-white);
+}
+
+.btn-large {
+    padding: 15px 35px;
+    font-size: 1.1em;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* =========================================================
+   Header et Navigation
+   ========================================================= */
+header {
+    background-color: var(--color-background-white);
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* ou fixed si vous voulez qu'il défile */
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--color-primary-blue);
+    font-family: var(--font-heading);
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+    /* Style du logo inspiré par votre image mais adapté aux couleurs */
+    background-color: var(--color-primary-blue); /* Fond du cercle */
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon::before {
+    content: '🧠'; /* Ou une petite icône SVG d'IA */
+    font-size: 20px;
+    line-height: 1;
+    color: var(--color-background-white);
+}
+
+
+.logo-text {
+    color: var(--color-text-dark); /* Texte du logo en sombre */
+    transition: color 0.3s;
+}
+
+.logo-text:hover {
+    color: var(--color-primary-blue);
+}
+
+nav a {
+    color: var(--color-text-dark);
+    margin-left: 28px;
+    padding: 5px 0;
+    position: relative;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--color-primary-blue);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    border-radius: 3px;
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%;
+}
+
+.cta-nav {
+    margin-left: 40px;
+}
+
+/* =========================================================
+   Sections Générales
+   ========================================================= */
+section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: var(--color-primary-blue);
+}
+
+/* =========================================================
+   Cartes et Conteneurs
+   ========================================================= */
+.card {
+    background-color: var(--color-background-white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--color-border-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================================
+   Formulaires (Commun à Auth et Diagnostic)
+   ========================================================= */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    font-size: 0.95em;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--color-background-lightgrey);
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    color: var(--color-text-dark);
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--color-primary-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    background-color: var(--color-background-white);
+}
+
+/* =========================================================
+   Générique au Pied de Page
+   ========================================================= */
+footer {
+    background-color: var(--color-primary-blue);
+    color: var(--color-background-white);
+    text-align: center;
+    padding: 25px 5%;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
