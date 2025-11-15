@@ -4919,3 +4919,235 @@ Patient_ID,All_Symptoms,Symptom_Count,Severity_Score,Disease
 4918,"burning_micturition, bladder_discomfort, foul_smell_of urine, continuous_feel_of_urine, 6",6,5.333333333333333,Urinary tract infection
 4919,"skin_rash, joint_pain, skin_peeling, silver_like_dusting, small_dents_in_nails, inflammatory_nails, 8",8,2.5,Psoriasis
 4920,"skin_rash, high_fever, blister, red_sore_around_nose, yellow_crust_ooze, 7",7,3.8,Impetigo
+4921,"joint_pain, muscle_weakness, swelling_joints, movement_stiffness, 6",6,3.2,Arthritis
+4922,"stiff_neck, muscle_weakness, painful_walking, swelling_joints, 5",5,3.9,Arthritis
+4923,"vomiting, headache, nausea, spinning_movements, unsteadiness, 7",7,4.2,(vertigo) Paroxysmal Positional Vertigo
+4924,"headache, spinning_movements, loss_of_balance, nausea, 5",5,3.7,(vertigo) Paroxysmal Positional Vertigo
+4925,"skin_rash, blackheads, scurring, pus_filled_pimples, 5",5,2.1,Acne
+4926,"blackheads, pus_filled_pimples, skin_rash, inflammatory_skin, 6",6,2.4,Acne
+4927,"burning_micturition, bladder_discomfort, foul_smell_of_urine, lower_abdominal_pain, 5",5,4.8,Urinary tract infection
+4928,"continuous_feel_of_urine, foul_smell_of_urine, burning_micturition, 4",4,5.1,Urinary tract infection
+4929,"skin_rash, skin_peeling, silver_like_dusting, joint_pain, 6",6,2.9,Psoriasis
+4930,"small_dents_in_nails, inflamed_skin, skin_peeling, 5",5,2.6,Psoriasis
+4931,"high_fever, blister, red_sore_around_nose, yellow_crust_ooze, 5",5,3.3,Impetigo
+4932,"blister, skin_rash, yellow_crust_ooze, painful_skin, 6",6,3.5,Impetigo
+4933,"fever, dry_cough, sore_throat, fatigue, 5",5,3.1,Common Cold
+4934,"sore_throat, runny_nose, mild_fever, headache, 5",5,2.8,Common Cold
+4935,"abdominal_pain, vomiting, diarrhea, nausea, 5",5,4.1,Gastroenteritis
+4936,"diarrhea, stomach_cramps, dehydration, vomiting, 5",5,4.4,Gastroenteritis
+4937,"chest_pain, shortness_of_breath, fatigue, coughing, 5",5,4.7,Bronchitis
+4938,"wheezing, coughing, chest_discomfort, mild_fever, 4",4,4.2,Bronchitis
+4939,"itching, skin_rash, sneezing, watery_eyes, 5",5,2.3,Allergic Reaction
+4940,"runny_nose, itching, swelling, mild_rash, 4",4,2.7,Allergic Reaction
+4941,"headache, sensitivity_to_light, nausea, pulsating_pain, 4",4,3.9,Migraine
+4942,"throbbing_headache, dizziness, visual_disturbance, 3",3,3.6,Migraine
+4943,"fatigue, weight_loss, increased_thirst, frequent_urination, 4",4,5.0,Diabetes Suspected
+4944,"blurred_vision, fatigue, high_sugar_reading, 3",3,4.8,Diabetes Suspected
+4945,"persistent_cough, chest_pain, fever, night_sweats, 5",5,4.9,Tuberculosis Suspected
+4946,"fatigue, weight_loss, chronic_cough, mild_fever, 4",4,4.6,Tuberculosis Suspected
+4947,"back_pain, muscle_stiffness, limited_mobility, 3",3,3.4,Lower Back Pain
+4948,"spasms, back_pain, difficulty_bending, 3",3,3.7,Lower Back Pain
+4949,"joint_pain, muscle_weakness, swelling_joints, movement_stiffness, 6",6,3.4,Arthritis
+4950,"painful_walking, stiff_neck, joint_pain, swelling_joints, 4",4,3.1,Arthritis
+4951,"nausea, spinning_movements, headache, loss_of_balance, 4",4,3.9,(vertigo) Paroxysmal Positional Vertigo
+4952,"unsteadiness, vomiting, dizziness, headache, 4",4,4.0,(vertigo) Paroxysmal Positional Vertigo
+4953,"skin_rash, pus_filled_pimples, scurring, blackheads, 4",4,2.1,Acne
+4954,"inflamed_skin, blackheads, skin_rash, large_pimples, 4",4,2.5,Acne
+4955,"burning_micturition, foul_smell_of_urine, bladder_discomfort, cramping, 4",4,5.0,Urinary tract infection
+4956,"continuous_feel_of_urine, painful_urination, foul_smell_of_urine, 3",3,4.9,Urinary tract infection
+4957,"skin_peeling, joint_pain, skin_rash, inflamed_skin, 4",4,2.6,Psoriasis
+4958,"silver_like_dusting, skin_rash, nail_damage, 3",3,2.8,Psoriasis
+4959,"high_fever, blister, painful_skin, red_sore_around_nose, 4",4,3.5,Impetigo
+4960,"yellow_crust_ooze, skin_rash, blister, 3",3,3.6,Impetigo
+4961,"fever, dry_cough, mild_headache, sore_throat, 4",4,2.9,Common Cold
+4962,"runny_nose, watery_eyes, mild_fever, cough, 4",4,2.6,Common Cold
+4963,"abdominal_pain, vomiting, dehydration, diarrhea, 4",4,4.1,Gastroenteritis
+4964,"diarrhea, stomach_cramps, nausea, 3",3,3.8,Gastroenteritis
+4965,"shortness_of_breath, coughing, chest_discomfort, fatigue, 4",4,4.3,Bronchitis
+4966,"mild_fever, coughing, wheezing, 3",3,3.9,Bronchitis
+4967,"itching, sneezing, watery_eyes, skin_rash, 4",4,2.3,Allergic Reaction
+4968,"swelling, runny_nose, mild_rash, itching, 4",4,2.6,Allergic Reaction
+4969,"headache, nausea, pulsating_pain, dizziness, 4",4,3.7,Migraine
+4970,"visual_disturbance, headache, sensitivity_to_light, 3",3,3.8,Migraine
+4971,"fatigue, frequent_urination, high_sugar_reading, 3",3,4.7,Diabetes Suspected
+4972,"weight_loss, blurred_vision, fatigue, 3",3,4.9,Diabetes Suspected
+4973,"night_sweats, fever, chronic_cough, fatigue, 4",4,4.8,Tuberculosis Suspected
+4974,"weight_loss, persistent_cough, chest_pain, 3",3,4.5,Tuberculosis Suspected
+4975,"back_pain, muscle_stiffness, difficulty_bending, 3",3,3.5,Lower Back Pain
+4976,"spasms, lower_back_pain, movement_difficulty, 3",3,3.7,Lower Back Pain
+
+4977,"sweating, rapid_heartbeat, dizziness, trembling, 4",4,3.9,Anxiety Episode
+4978,"nervousness, chest_tightness, trembling, 3",3,3.5,Anxiety Episode
+4979,"eye_redness, itching, burning_eyes, tearing, 4",4,2.4,Conjunctivitis
+4980,"eye_discomfort, light_sensitivity, redness, 3",3,2.7,Conjunctivitis
+4981,"sore_throat, fever, swollen_glands, headache, 4",4,3.3,Pharyngitis
+4982,"difficulty_swallowing, throat_pain, mild_fever, 3",3,3.0,Pharyngitis
+4983,"ear_pain, hearing_loss, fever, fluid_leakage, 4",4,3.8,Otitis Media
+4984,"ear_discomfort, dizziness, mild_pain, 3",3,3.2,Otitis Media
+4985,"rash, fever, fatigue, swollen_lymph_nodes, 4",4,3.4,Rubella Suspected
+4986,"joint_pain, rash, mild_fever, 3",3,3.1,Rubella Suspected
+4987,"fever, headache, stiff_neck, vomiting, 4",4,4.6,Meningitis Suspected
+4988,"light_sensitivity, stiff_neck, fatigue, 3",3,4.4,Meningitis Suspected
+4989,"itchy_scalp, dandruff, redness, 3",3,1.9,Scalp Dermatitis
+4990,"dry_flakes, redness, mild_itching, 3",3,2.0,Scalp Dermatitis
+4991,"muscle_cramps, dehydration, dizziness, weakness, 4",4,3.9,Heat Exhaustion
+4992,"fatigue, excessive_sweating, rapid_breathing, 3",3,3.7,Heat Exhaustion
+4993,"abdominal_bloating, gas, stomach_pain, 3",3,2.4,Indigestion
+4994,"nausea, abdominal_pain, fullness, 3",3,2.6,Indigestion
+4995,"hand_tremor, anxiety, sweating, irritability, 4",4,3.5,Stress Reaction
+4996,"fast_heartbeat, nervousness, trembling, 3",3,3.3,Stress Reaction
+4997,"itchy_skin, redness, blistering, 3",3,2.2,Contact Dermatitis
+4998,"rash, burning_sensation, swelling, 3",3,2.5,Contact Dermatitis
+4999,"coughing, sneezing, chest_tightness, wheezing, 4",4,3.8,Asthma Suspected
+5000,"shortness_of_breath, coughing, fatigue, 3",3,3.9,Asthma Suspected
+5001,"vomiting, dizziness, rapid_breathing, sweating, 4",4,4.0,Food Poisoning
+5002,"abdominal_pain, diarrhea, nausea, 3",3,3.8,Food Poisoning
+5003,"muscle_pain, fever, fatigue, body_aches, 4",4,3.9,Seasonal Flu
+5004,"coughing, sore_throat, high_fever, 3",3,4.1,Seasonal Flu
+5005,"joint_stiffness, swelling, mild_fever, fatigue, 4",4,3.2,Rheumatic Condition
+5006,"painful_joints, weakness, inflammation, 3",3,3.4,Rheumatic Condition
+5007,"low_energy, sadness, loss_of_interest, 3",3,3.0,Depressive Symptoms
+5008,"sleep_disturbances, fatigue, difficulty_concentrating, 3",3,2.8,Depressive Symptoms
+5009,"gastric_burning, nausea, acid_reflux, 3",3,2.9,Gastric Reflux
+5010,"chest_burning, throat_irritation, acid_taste, 3",3,3.1,Gastric Reflux
+5011,"itching, red_patches, dryness, 3",3,2.0,Eczema
+5012,"inflamed_skin, peeling, itching, 3",3,2.3,Eczema
+5013,"headache, confusion, fatigue, dizziness, 4",4,3.5,Dehydration
+5014,"dry_mouth, dizziness, low_urination, 3",3,3.6,Dehydration
+5015,"coughing, throat_irritation, runny_nose, 3",3,2.7,Respiratory Irritation
+5016,"sneezing, watery_eyes, nasal_congestion, 3",3,2.5,Respiratory Irritation
+5017,"dizziness, blurred_vision, fatigue, 3",3,3.8,Low Blood Pressure
+5018,"weakness, fainting, cold_skin, 3",3,3.7,Low Blood Pressure
+5019,"irritability, headache, restlessness, 3",3,2.8,Sleep Deprivation
+5020,"yawning, difficulty_focusing, fatigue, 3",3,2.7,Sleep Deprivation
+5021,"numbness, tingling, weakness, 3",3,3.3,Nerve Compression
+5022,"burning_sensation, tingling, mild_pain, 3",3,3.2,Nerve Compression
+5023,"abdominal_swelling, constipation, discomfort, 3",3,2.6,Constipation
+5024,"hard_stool, abdominal_pain, difficulty_passing_stool, 3",3,2.7,Constipation
+5025,"cold_feet, numbness, tingling, 3",3,3.1,Poor Circulation
+5026,"fatigue, dizziness, cold_hands, 3",3,3.0,Poor Circulation
+5027,"muscle_spasm, arm_pain, stiffness, 3",3,3.2,Muscle Strain
+5028,"shoulder_pain, movement_pain, muscle_tightness, 3",3,3.1,Muscle Strain
+5029,"itching, bites, redness, 3",3,2.0,Bug Bite Reaction
+5030,"swelling, rash, small_bumps, 3",3,2.3,Bug Bite Reaction
+5031,"difficulty_breathing, chest_tightness, fatigue, 3",3,4.4,Respiratory Distress
+5032,"wheezing, blue_lips, shortness_of_breath, 3",3,4.6,Respiratory Distress
+5033,"abdominal_pain, tender_stomach, nausea, 3",3,3.7,Appendix Irritation
+5034,"fever, abdominal_discomfort, vomiting, 3",3,3.9,Appendix Irritation
+5035,"itching_hands, swelling, redness, 3",3,2.4,Mild Dermatitis
+5036,"skin_dryness, red_spots, irritation, 3",3,2.2,Mild Dermatitis
+5037,"hoarseness, throat_irritation, dry_cough, 3",3,2.8,Throat Inflammation
+5038,"painful_swallowing, mild_cough, throat_redness, 3",3,2.9,Throat Inflammation
+5039,"fatigue, dizziness, weak_pulse, 3",3,3.5,Anemia Suspected
+5040,"pale_skin, shortness_of_breath, low_energy, 3",3,3.6,Anemia Suspected
+5041,"anxiety, sweating, dizziness, chest_pain, 4",4,3.8,Panic Symptoms
+5042,"rapid_heartbeat, shaking, difficulty_breathing, 3",3,3.9,Panic Symptoms
+5043,"intense_thirst, dry_mouth, dehydration, 3",3,3.7,Fluid Loss
+5044,"fatigue, dizziness, low_urine_output, 3",3,3.8,Fluid Loss
+5045,"mild_fever, headache, joint_pain, 3",3,3.0,Viral Symptoms
+5046,"cough, fatigue, low_grade_fever, 3",3,3.1,Viral Symptoms
+5047,"muscle_aching, fatigue, chills, 3",3,3.4,Body Ache Syndrome
+5048,"weakness, head_pressure, mild_chills, 3",3,3.2,Body Ache Syndrome
+5049,"joint_pain, swelling_joints, stiffness, movement_pain, 4",4,3.3,Arthritis
+5050,"muscle_weakness, painful_walking, stiff_neck, 3",3,3.2,Arthritis
+5051,"spinning_movements, nausea, dizziness, vomiting, 4",4,4.1,(vertigo) Paroxysmal Positional Vertigo
+5052,"loss_of_balance, unsteadiness, headache, 3",3,4.0,(vertigo) Paroxysmal Positional Vertigo
+5053,"skin_rash, blackheads, pus_filled_pimples, 3",3,2.0,Acne
+5054,"scurring, large_pimples, inflamed_skin, 3",3,2.3,Acne
+5055,"burning_micturition, continuous_feel_of_urine, foul_smell_of_urine, 3",3,5.1,Urinary tract infection
+5056,"bladder_discomfort, painful_urination, cramping, 3",3,4.8,Urinary tract infection
+5057,"skin_peeling, red_patches, inflamed_skin, 3",3,2.6,Psoriasis
+5058,"silver_like_dusting, nail_damage, joint_pain, 3",3,2.7,Psoriasis
+5059,"blister, red_sore_around_nose, yellow_crust_ooze, 3",3,3.5,Impetigo
+5060,"skin_rash, blister, painful_skin, 3",3,3.7,Impetigo
+5061,"runny_nose, mild_fever, cough, 3",3,2.7,Common Cold
+5062,"fever, watery_eyes, sneezing, 3",3,2.5,Common Cold
+5063,"diarrhea, nausea, abdominal_pain, 3",3,3.9,Gastroenteritis
+5064,"vomiting, stomach_cramps, dehydration, 3",3,4.0,Gastroenteritis
+5065,"coughing, chest_discomfort, wheezing, 3",3,4.2,Bronchitis
+5066,"shortness_of_breath, fatigue, coughing, 3",3,4.1,Bronchitis
+5067,"itching, sneezing, watery_eyes, 3",3,2.3,Allergic Reaction
+5068,"skin_rash, nasal_congestion, swelling, 3",3,2.4,Allergic Reaction
+5069,"dizziness, pulsating_pain, nausea, 3",3,3.6,Migraine
+5070,"sensitivity_to_light, headache, blurred_vision, 3",3,3.8,Migraine
+5071,"high_sugar_reading, fatigue, frequent_urination, 3",3,4.6,Diabetes Suspected
+5072,"blurred_vision, excessive_thirst, fatigue, 3",3,4.7,Diabetes Suspected
+5073,"chronic_cough, weight_loss, fever, 3",3,4.6,Tuberculosis Suspected
+5074,"night_sweats, chest_pain, fatigue, 3",3,4.5,Tuberculosis Suspected
+5075,"lower_back_pain, difficulty_bending, stiffness, 3",3,3.5,Lower Back Pain
+5076,"muscle_spasm, movement_difficulty, back_pain, 3",3,3.6,Lower Back Pain
+5077,"nervousness, trembling, sweating, 3",3,3.6,Anxiety Episode
+5078,"rapid_heartbeat, dizziness, chest_tightness, 3",3,3.7,Anxiety Episode
+5079,"eye_redness, itching, burning_sensation, 3",3,2.3,Conjunctivitis
+5080,"tearing, sensitivity_to_light, eye_pain, 3",3,2.6,Conjunctivitis
+5081,"throat_pain, fever, headache, 3",3,3.2,Pharyngitis
+5082,"swollen_glands, mild_fever, difficulty_swallowing, 3",3,3.3,Pharyngitis
+5083,"hearing_loss, fluid_leakage, fever, 3",3,3.7,Otitis Media
+5084,"ear_pain, dizziness, fullness_in_ear, 3",3,3.4,Otitis Media
+5085,"rash, swollen_lymph_nodes, fever, 3",3,3.3,Rubella Suspected
+5086,"fatigue, mild_fever, rash, 3",3,3.1,Rubella Suspected
+5087,"vomiting, stiff_neck, headache, 3",3,4.5,Meningitis Suspected
+5088,"stiff_neck, fatigue, light_sensitivity, 3",3,4.3,Meningitis Suspected
+5089,"itchy_scalp, dandruff, redness, 3",3,2.0,Scalp Dermatitis
+5090,"peeling, dryness, itchy_scalp, 3",3,1.9,Scalp Dermatitis
+5091,"dizziness, sweating, muscle_cramps, 3",3,3.8,Heat Exhaustion
+5092,"fatigue, dehydration, rapid_breathing, 3",3,3.7,Heat Exhaustion
+5093,"gas, abdominal_pain, bloating, 3",3,2.4,Indigestion
+5094,"fullness, nausea, stomach_pain, 3",3,2.5,Indigestion
+5095,"chest_tightness, shaking, anxiety, 3",3,3.3,Stress Reaction
+5096,"headache, irritability, sweating, 3",3,3.2,Stress Reaction
+5097,"itching, blistering, redness, 3",3,2.1,Contact Dermatitis
+5098,"swelling, irritation, rash, 3",3,2.4,Contact Dermatitis
+5099,"sneezing, chest_tightness, coughing, 3",3,3.7,Asthma Suspected
+5100,"fatigue, wheezing, shortness_of_breath, 3",3,3.8,Asthma Suspected
+5101,"vomiting, diarrhea, sweating, 3",3,3.9,Food Poisoning
+5102,"nausea, abdominal_pain, chills, 3",3,4.0,Food Poisoning
+5103,"body_aches, fever, fatigue, 3",3,3.8,Seasonal Flu
+5104,"cough, headache, joint_pain, 3",3,3.9,Seasonal Flu
+5105,"joint_stiffness, inflammation, swelling, 3",3,3.2,Rheumatic Condition
+5106,"painful_joints, weakness, stiffness, 3",3,3.3,Rheumatic Condition
+5107,"sleep_disturbances, sadness, fatigue, 3",3,2.8,Depressive Symptoms
+5108,"difficulty_concentrating, low_energy, mood_changes, 3",3,2.9,Depressive Symptoms
+5109,"acid_reflux, chest_burning, throat_irritation, 3",3,3.0,Gastric Reflux
+5110,"gastric_burning, nausea, acid_taste, 3",3,2.9,Gastric Reflux
+5111,"dryness, itching, red_patches, 3",3,2.2,Eczema
+5112,"inflamed_skin, small_cracks, peeling, 3",3,2.3,Eczema
+5113,"fatigue, headache, dry_mouth, 3",3,3.5,Dehydration
+5114,"confusion, dizziness, low_urination, 3",3,3.6,Dehydration
+5115,"runny_nose, sneezing, cough, 3",3,2.6,Respiratory Irritation
+5116,"throat_irritation, watery_eyes, congestion, 3",3,2.5,Respiratory Irritation
+5117,"dizziness, weakness, blurred_vision, 3",3,3.7,Low Blood Pressure
+5118,"cold_skin, fainting, fatigue, 3",3,3.8,Low Blood Pressure
+5119,"difficulty_focusing, fatigue, irritability, 3",3,2.7,Sleep Deprivation
+5120,"headache, yawning, poor_attention, 3",3,2.8,Sleep Deprivation
+5121,"tingling, numbness, weakness, 3",3,3.2,Nerve Compression
+5122,"burning_sensation, radiating_pain, discomfort, 3",3,3.1,Nerve Compression
+5123,"hard_stool, constipation, abdominal_pain, 3",3,2.6,Constipation
+5124,"abdominal_swelling, discomfort, difficulty_passing_stool, 3",3,2.7,Constipation
+5125,"cold_hands, tingling, fatigue, 3",3,3.0,Poor Circulation
+5126,"numbness, cold_feet, dizziness, 3",3,3.1,Poor Circulation
+5127,"muscle_strain, stiffness, shoulder_pain, 3",3,3.1,Muscle Strain
+5128,"tightness, arm_pain, movement_pain, 3",3,3.2,Muscle Strain
+5129,"redness, itching, swelling, 3",3,2.0,Bug Bite Reaction
+5130,"small_bumps, rash, irritation, 3",3,2.1,Bug Bite Reaction
+5131,"difficulty_breathing, blue_lips, chest_tightness, 3",3,4.5,Respiratory Distress
+5132,"fatigue, wheezing, rapid_breathing, 3",3,4.4,Respiratory Distress
+5133,"abdominal_pain, nausea, tenderness, 3",3,3.8,Appendix Irritation
+5134,"low_fever, vomiting, sharp_pain, 3",3,4.0,Appendix Irritation
+5135,"skin_dryness, irritation, mild_rash, 3",3,2.1,Mild Dermatitis
+5136,"red_spots, itching, mild_swelling, 3",3,2.3,Mild Dermatitis
+5137,"throat_redness, dry_cough, hoarseness, 3",3,2.9,Throat Inflammation
+5138,"painful_swallowing, mild_fever, irritation, 3",3,3.0,Throat Inflammation
+5139,"weakness, pale_skin, dizziness, 3",3,3.4,Anemia Suspected
+5140,"low_energy, shortness_of_breath, fatigue, 3",3,3.5,Anemia Suspected
+5141,"chest_pain, trembling, rapid_heartbeat, 3",3,3.9,Panic Symptoms
+5142,"dizziness, sweating, fear, 3",3,3.8,Panic Symptoms
+5143,"dry_mouth, intense_thirst, dizziness, 3",3,3.7,Fluid Loss
+5144,"fatigue, low_urine_output, dehydration, 3",3,3.8,Fluid Loss
+5145,"mild_fever, headache, coughing, 3",3,3.1,Viral Symptoms
+5146,"sore_throat, joint_pain, mild_fatigue, 3",3,3.0,Viral Symptoms
+5147,"chills, muscle_ache, weakness, 3",3,3.3,Body Ache Syndrome
+5148,"fatigue, head_pressure, mild_chills, 3",3,3.2,Body Ache Syndrome
+
+
+
